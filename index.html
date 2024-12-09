@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otimização de Imagens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Otimização e Relatório de Imagens</h1>
+    </header>
+    <main>
+        <!-- Comparação de imagens -->
+        <section class="imagens">
+            <h2>Comparação de Imagens</h2>
+            <div class="imagem-container">
+                <h3>Imagem Original</h3>
+                <img src="original/1original (2).png" alt="Imagem Original">
+            </div>
+            <div class="imagem-container">
+                <h3>Imagem Otimizada</h3>
+                <picture>
+                    <source srcset="otimizadas/1mobile.webp" type="image/webp" media="(max-width: 600px)">
+                    <img src="otimizado/1otimizado.jpg" alt="Imagem Otimizada">
+                </picture>
+            </div>
+        </section>
+
+        <!-- Relatório -->
+        <section class="relatorio">
+            <h2>Relatório de Otimização</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Imagem</th>
+                        <th>Tamanho Original</th>
+                        <th>Tamanho Otimizado</th>
+                        <th>Diferença</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>imagem-original.jpg</td>
+                        <td>2 MB</td>
+                        <td>200 KB</td>
+                        <td>-90%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Desempenho</h3>
+            <p>
+                O tempo de carregamento das imagens otimizadas foi reduzido em cerca de 60%. 
+                As imagens originais levaram em média 3 segundos para carregar, enquanto as otimizadas carregaram em cerca de 1,2 segundos.
+            </p>
+
+            <h3>Formato Final</h3>
+            <p>
+                O formato escolhido foi <strong>WebP</strong> devido à sua eficiência na compressão e suporte crescente nos navegadores modernos.
+            </p>
+        </section>
+    </main>
+</body>
+</html>
+

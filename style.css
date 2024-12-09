@@ -1,0 +1,122 @@
+/* Estilos básicos */
+body {
+    font-family: "Segoe UI", sans-serif; /* Fonte confortável */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #ffffff;
+    background-color: #121212;
+    box-sizing: border-box;
+}
+
+/* Cabeçalho */
+header {
+    background: #121212;
+    padding: 1rem 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Layout principal */
+main {
+    padding: 1.5rem 1rem;
+}
+
+/* Comparação de imagens */
+.imagens {
+    display: flex;
+    flex-direction: column; /* Empilha as imagens */
+    gap: 1rem; /* Espaço entre os elementos */
+    margin-bottom: 2rem;
+}
+
+.imagem-container {
+    width: 100%; /* Largura total */
+    text-align: center;
+}
+
+.imagem-container img, .imagem-container picture img {
+    max-width: 100%; /* Imagem ajusta-se ao container */
+    height: auto;
+    border-radius: 10px;
+    border: none;
+    background-color: #121212; /* Fundo preto */
+}
+
+/* Relatório */
+.relatorio {
+    padding: 1rem;
+    background: #1e1e1e;
+    border-radius: 10px;
+    color: #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-weight: 300;
+}
+
+.relatorio table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+.relatorio th, .relatorio td {
+    text-align: left;
+    padding: 0.5rem;
+    color: #fff;
+    font-size: 0.9rem; /* Reduzido para caber melhor */
+}
+
+.relatorio th {
+    background: #333;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 8px;
+}
+
+.relatorio p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    color: #bbb;
+    font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .imagens {
+        gap: 1.5rem;
+    }
+
+    .relatorio th, .relatorio td {
+        padding: 0.4rem;
+        font-size: 0.85rem;
+    }
+
+    .relatorio p {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .relatorio th, .relatorio td {
+        font-size: 0.8rem;
+    }
+
+    .relatorio p {
+        font-size: 0.8rem;
+    }
+}
