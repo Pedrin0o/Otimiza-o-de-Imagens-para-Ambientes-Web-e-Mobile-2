@@ -1,0 +1,1 @@
+# Otimiza-o-de-Imagens-para-Ambientes-Web-e-Mobile-2
